@@ -1,0 +1,8 @@
+xrandr -s 1680x1050
+
+# setup gnome-keyring
+eval $(gnome-keyring-daemon --start)
+export GNOME_KEYRING_SOCKET
+export GNOME_KEYRING_PID
+
+exec xmonad
